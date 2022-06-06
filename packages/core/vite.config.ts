@@ -14,6 +14,9 @@ export default defineConfig({
     },
     extensions: ['.ts', '.vue'],
   },
+  define: {
+    'process.env.NODE_ENV': 'process.env.NODE_ENV',
+  },
   build: {
     emptyOutDir: false,
     lib: {
